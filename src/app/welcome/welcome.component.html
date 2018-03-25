@@ -1,0 +1,36 @@
+<h1>Sélectionnez les paramètre du tableau de jeu</h1>
+
+
+<div>
+
+  <div>
+    <h3>Taille du tableau</h3>
+    <div>
+      taille x:
+      <input type="text" [(ngModel)]="sizeX">
+    </div>
+    <div>
+      taille y:
+      <input type="text" [(ngModel)]="sizeY">
+    </div>
+  </div>
+
+  <div>
+    <h3>Position de l'aspirateur</h3>
+    <div>
+      x:
+      <input type="text" [(ngModel)]="addCoordinateX">
+    </div>
+    <div>
+      y:
+      <input type="text" [(ngModel)]="addCoordinateY">
+    </div>
+    <div>
+      direction:
+      <input type="text" [(ngModel)]="directionHoover">
+    </div>
+  </div>
+
+  <button class="btn btn-success" (click)="validate(sizeX, sizeY, addCoordinateX, addCoordinateY, directionHoover)">valide</button>
+
+</div>

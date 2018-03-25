@@ -1,0 +1,7 @@
+<section>
+  <table class="container-custom">
+    <tr *ngFor="let row of board" >
+      <td *ngFor="let case of row"><div innerHTML="{{case}}"></div></td>
+    </tr>
+  </table>
+</section>

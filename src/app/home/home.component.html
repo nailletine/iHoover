@@ -1,0 +1,17 @@
+<app-table [col]="colNumber" [row]="rowNumber" [coordinateInit]="coordinate">
+</app-table>
+
+<div class="row orders">
+  <div class="offset-1"> combinaison:
+    <input type="text" [(ngModel)]="Combination">
+  </div>
+  <div class="button-custom">
+    <button class="btn btn-primary" (click)="TranslateCombi(Combination)">let's go</button>
+  </div>
+</div>
+
+<div class="last-position" *ngIf="lastPosition">
+  <h3>Dernière Position</h3>
+  <p>x : {{lastPosition.x}}</p>
+  <p>y : {{lastPosition.y}}</p>
+</div>
